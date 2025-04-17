@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mine Oubliée de Phancreux</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>La Mine Oubliée de Phancreux</h1>
+        <p>Plongez dans une aventure épique de Donjons & Dragons</p>
+    </header>
+    <nav>
+        <a href="#characters">Personnages</a>
+        <a href="#map">Carte</a>
+        <a href="#dice-roller">Lanceur de dés</a>
+        <a href="#resources">Ressources</a>
+    </nav>
+    <section id="characters">
+        <h2>Personnages</h2>
+        <div id="character-list">
+            <p>Aucun personnage ajouté. Commencez à ajouter vos héros !</p>
+        </div>
+        <button onclick="addCharacter()">Ajouter un personnage</button>
+    </section>
+    <section id="map">
+        <h2>Carte Interactive</h2>
+        <div id="map-container"></div>
+    </section>
+    <section id="dice-roller">
+        <h2>Lanceur de Dés</h2>
+        <input type="number" id="dice-sides" placeholder="Nombre de faces (ex: 20)" />
+        <button onclick="rollDice()">Lancer le dé</button>
+        <p id="dice-result"></p>
+    </section>
+    <section id="resources">
+        <h2>Ressources</h2>
+        <p>Téléchargez des fiches de personnages, des règles, et des cartes.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 La Mine Oubliée de Phancreux</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
